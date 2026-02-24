@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discipleship | Daniel C Muomah</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:rgba(255,255,255,.06);
+      --border:rgba(255,255,255,.10);
+      --text:#f4f6ff;
+      --muted:#b8c1ff;
+      --gold:#f6d365;
+      --blue:#1e3a8a;
+      --blue2:#0b2d7a;
+      --radius:18px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(30,58,138,.35), transparent 60%),
+                  radial-gradient(1000px 600px at 80% 30%, rgba(246,211,101,.18), transparent 60%),
+                  linear-gradient(180deg, #060912, var(--bg));
+      color:var(--text);
+    }
+    header{
+      padding:18px 16px;
+      border-bottom:2px solid rgba(246,211,101,.35);
+      background: linear-gradient(90deg, rgba(30,58,138,.45), rgba(10,15,35,.35));
+    }
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .brand{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .title{
+      font-size:22px; font-weight:800; letter-spacing:.5px;
+      color:var(--gold);
+      margin:0;
+    }
+    .subtitle{
+      margin:3px 0 0 0;
+      color:rgba(244,246,255,.85);
+      font-size:13px;
+    }
+    .pill{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      text-decoration:none;
+      font-weight:700;
+    }
+    main{padding:22px 16px 36px;}
+    .hero{
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: var(--radius);
+      padding:22px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.35);
+    }
+    h1{
+      margin:0 0 10px 0;
+      font-size:28px;
+      line-height:1.15;
+    }
+    .lead{
+      margin:0;
+      color:rgba(244,246,255,.86);
+      line-height:1.6;
+      font-size:15px;
+    }
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media(min-width:860px){
+      .grid{grid-template-columns: 1.2fr .8fr;}
+    }
+    .card{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding:18px;
+    }
+    .card h2{
+      margin:0 0 10px 0;
+      color:var(--gold);
+      font-size:18px;
+    }
+    ul{margin:10px 0 0 18px; padding:0; color:rgba(244,246,255,.88); line-height:1.65;}
+    .badge{
+      display:inline-block;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(246,211,101,.4);
+      background: rgba(246,211,101,.08);
+      color:var(--gold);
+      font-weight:800;
+      font-size:12px;
+      margin-bottom:10px;
+    }
+    .ctaRow{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      font-weight:800;
+      color:var(--text);
+      background: rgba(255,255,255,.06);
+    }
+    .btn.gold{
+      border:1px solid rgba(246,211,101,.6);
+      background: linear-gradient(180deg, rgba(246,211,101,.25), rgba(246,211,101,.10));
+      color:#fff;
+    }
+    .small{font-size:12px; color:rgba(244,246,255,.75); line-height:1.6; margin-top:10px;}
+    .form label{display:block; font-weight:700; margin:10px 0 6px;}
+    .form input, .form select, .form textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(10,15,35,.55);
+      color:var(--text);
+      outline:none;
+    }
+    .form textarea{min-height:110px; resize:vertical;}
+    .form .hint{font-size:12px; color:rgba(244,246,255,.7); margin-top:6px;}
+    footer{
+      padding:18px 16px 26px;
+      color:rgba(244,246,255,.72);
+      font-size:12px;
+      text-align:center;
+    }
+    .back{
+      display:inline-block;
+      margin-top:16px;
+      color:var(--gold);
+      font-weight:800;
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <div>
+        <p class="title">Daniel C Muomah</p>
+        <p class="subtitle">The Eagle’s Breed Discipleship Network</p>
+      </div>
+      <a class="pill" href="index.html">Back to Home</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">JOIN THE DISCIPLESHIP NETWORK</span>
+      <h1>The Eagle’s Breed Discipleship Network</h1>
+      <p class="lead">
+        This is a discipleship family for believers who desire spiritual growth, kingdom alignment,
+        consistency in prayer, deeper understanding of the Word, and transformation into mature disciples of Christ.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>What You Will Gain</h2>
+          <ul>
+            <li>Word-based teachings that build stability and spiritual maturity</li>
+            <li>Prayer altar support and strategic warfare mentorship</li>
+            <li>Weekly growth assignments (Bible, prayer, character & purpose)</li>
+            <li>Discipleship accountability and kingdom discipline</li>
+            <li>Leadership grooming for ministry effectiveness</li>
+          </ul>
+
+          <h2 style="margin-top:14px;">Who Can Join?</h2>
+          <ul>
+            <li>New believers seeking foundation</li>
+            <li>Growing believers hungry for depth</li>
+            <li>Workers/Ministers needing structure and fire</li>
+            <li>Youths hungry for purity, purpose, and power</li>
+          </ul>
+
+          <div class="ctaRow">
+            <a class="btn gold" href="#join">Join Now</a>
+            <a class="btn" href="#how">How It Works</a>
+          </div>
+
+          <a class="back" href="index.html">← Back to Home</a>
+        </div>
+
+        <div class="card" id="how">
+          <h2>How It Works</h2>
+          <ul>
+            <li>Register to join the network</li>
+            <li>We add you to the discipleship platform/group</li>
+            <li>You receive teachings + prayer points + assignments</li>
+            <li>You grow, serve, and become a kingdom-minded disciple</li>
+          </ul>
+
+          <p class="small">
+            Note: This page is a registration gateway. Your details help us place you properly and follow you up.
+          </p>
+        </div>
+
+        <div class="card form" id="join" style="grid-column:1/-1;">
+          <h2>Join Form</h2>
+
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+
+          <label>WhatsApp Number</label>
+          <input type="text" id="phone" placeholder="e.g. +234..." />
+
+          <label>Location (City / Country)</label>
+          <input type="text" id="location" placeholder="e.g. Lagos, Nigeria" />
+
+          <label>Category</label>
+          <select id="category">
+            <option>New Believer</option>
+            <option>Growing Believer</option>
+            <option>Youth</option>
+            <option>Minister/Worker</option>
+          </select>
+
+          <label>Why do you want to join?</label>
+          <textarea id="reason" placeholder="Write briefly..."></textarea>
+
+          <p class="hint">
+            Click “Send via WhatsApp” to submit instantly. (You can later connect a database/form tool, but this works now.)
+          </p>
+
+          <div class="ctaRow">
+            <!-- REPLACE +2348012345678 with your real WhatsApp number -->
+            <a class="btn gold" href="#" onclick="sendWhatsApp()">Send via WhatsApp</a>
+            <!-- REPLACE with your real email -->
+            <a class="btn" href="mailto:your@email.com?subject=Join%20The%20Eagle%27s%20Breed%20Discipleship%20Network">Send via Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    ©️ <span id="yr"></span> Daniel C Muomah — The Eagle’s Breed Discipleship Network
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    function sendWhatsApp(){
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const location = document.getElementById("location").value.trim();
+      const category = document.getElementById("category").value.trim();
+      const reason = document.getElementById("reason").value.trim();
+
+      const msg =
+`Hello Sir, I want to join The Eagle’s Breed Discipleship Network.
+
+Full Name: ${name || "-"}
+WhatsApp: ${phone || "-"}
+Location: ${location || "-"}
+Category: ${category || "-"}
+Reason: ${reason || "-"}`;
+
+      // CHANGE this number to your WhatsApp number (international format)
+      const yourNumber = "2348012345678";
+      const url = "https://wa.me/" + yourNumber + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
