@@ -1,433 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Daniel C Muomah | Official Website</title>
-  <meta name="description" content="Official website of Daniel C Muomah — Prophetic teaching, worship, healing, deliverance, and discipleship." />
-  <meta name="theme-color" content="#4b2e83" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-sale=1.0">
+<title>Daniel C Muomah | Official Website</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Daniel C Muomah | Official Website" />
-  <meta property="og:description" content="Prophetic teaching • Worship • Healing • Deliverance • Discipleship" />
-  <meta property="og:type" content="website" />
-  <!-- Add your hosted photo later -->
-  <!-- <meta property="og:image" content="https://yourdomain.com/cover.jpg" /> -->
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#0b1d3a;
+  color:white;
+}
 
-  <style>
-    :root{
-      --bg:#0b0b12;
-      --card:#121225;
-      --muted:#b9b9d3;
-      --text:#f3f3ff;
-      --brand:#6f3cc3;
-      --brand2:#f6d365;
-      --border:rgba(255,255,255,.08);
-      --shadow: 0 14px 40px rgba(0,0,0,.45);
-      --radius:18px;
-      --max:1100px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(111,60,195,.45), transparent 55%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(246,211,101,.18), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:22px}
-    .nav{
-      position:sticky; top:0; z-index:30;
-      backdrop-filter: blur(10px);
-      background: rgba(11,11,18,.65);
-      border-bottom:1px solid var(--border);
-    }
-    .nav .inner{display:flex; align-items:center; justify-content:space-between; gap:14px}
-    .brand{
-      display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px;
-    }
-    .badge{
-      width:38px;height:38px;border-radius:12px;
-      background: linear-gradient(135deg, var(--brand), rgba(246,211,101,.55));
-      box-shadow: var(--shadow);
-    }
-    .links{display:flex; gap:14px; flex-wrap:wrap; font-weight:600; color:var(--muted)}
-    .links a{padding:8px 10px; border-radius:12px}
-    .links a:hover{background: rgba(255,255,255,.06); color:var(--text)}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:12px 14px; border-radius:14px; border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      font-weight:800;
-    }
-    .btn.primary{
-      background: linear-gradient(135deg, var(--brand), rgba(246,211,101,.45));
-      border: none;
-      box-shadow: var(--shadow);
-    }
-    .btn.small{padding:10px 12px; font-weight:700}
-    .hero{padding:34px 0 18px;}
-    .grid{display:grid; gap:18px; grid-template-columns: 1.15fr .85fr;}
-    @media (max-width: 900px){
-      .grid{grid-template-columns:1fr}
-      .links{display:none}
-    }
-    .card{
-      background: rgba(18,18,37,.75);
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:20px;
-    }
-    h1{
-      margin: 0 0 10px;
-      font-size: clamp(28px, 3.6vw, 44px);
-      line-height:1.15;
-      letter-spacing:-.3px;
-    }
-    .sub{color:var(--muted); font-weight:600; margin:0 0 16px}
-    .kpis{display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:16px}
-    @media (max-width: 520px){ .kpis{grid-template-columns:1fr} }
-    .kpi{
-      padding:14px; border-radius:16px; border:1px solid var(--border);
-      background: rgba(255,255,255,.04);
-    }
-    .kpi b{display:block; font-size:18px}
-    .kpi span{color:var(--muted); font-weight:600; font-size:13px}
-    .hero-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
-    .portrait{display:grid; gap:12px;}
-    .photo{
-      width:100%; aspect-ratio: 4/3; border-radius: 18px;
-      background:
-        linear-gradient(135deg, rgba(111,60,195,.55), rgba(246,211,101,.12)),
-        url('https://images.unsplash.com/photo-1520975958225-35c6f77c9d1b?auto=format&fit=crop&w=1200&q=60');
-      background-size: cover;
-      background-position:center;
-      border:1px solid var(--border);
-      overflow:hidden;
-    }
-    .note{color:var(--muted); font-weight:600; font-size:14px}
-    .section{padding:18px 0}
-    .section h2{margin:0 0 10px; font-size: 22px}
-    .pills{display:flex; gap:10px; flex-wrap:wrap}
-    .pill{
-      padding:10px 12px; border-radius:999px;
-      border:1px solid var(--border); background: rgba(255,255,255,.04);
-      color:var(--muted); font-weight:700; font-size:13px
-    }
-    .two{display:grid; gap:18px; grid-template-columns: 1fr 1fr;}
-    @media (max-width: 900px){ .two{grid-template-columns:1fr} }
-    .list{margin:0; padding-left:18px; color:var(--muted); font-weight:600}
-    .footer{
-      padding:26px 0 40px;
-      color:var(--muted); font-weight:600;
-      border-top:1px solid var(--border);
-      margin-top:20px;
-    }
-    .input{
-      width:100%;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      background: rgba(255,255,255,.04);
-      color:var(--text);
-      outline:none;
-      font-weight:600;
-    }
-    textarea.input{min-height:110px; resize: vertical}
-    .row{display:grid; gap:10px; grid-template-columns:1fr 1fr}
-    @media (max-width: 700px){ .row{grid-template-columns:1fr} }
-    .tiny{font-size:12px}
-    .divider{height:1px;background:var(--border);margin:14px 0}
-  </style>
+header{
+  background:#06142b;
+  padding:20px;
+  text-align:center;
+  border-bottom:2px solid gold;
+}
+
+header h1{
+  margin:0;
+  color:gold;
+}
+
+nav{
+  text-align:center;
+  padding:15px;
+  background:#0d2347;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:gold;
+}
+
+.hero{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:32px;
+  color:gold;
+}
+
+.section{
+  padding:40px 20px;
+  text-align:center;
+}
+
+.section h3{
+  color:gold;
+}
+
+.button{
+  display:inline-block;
+  margin:10px;
+  padding:12px 20px;
+  background:gold;
+  color:#0b1d3a;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+.button:hover{
+  background:white;
+}
+
+footer{
+  background:#06142b;
+  text-align:center;
+  padding:20px;
+  border-top:2px solid gold;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="nav">
-    <div class="wrap inner">
-      <div class="brand">
-        <div class="badge"></div>
-        <div>
-          <div style="font-size:14px; color:var(--muted); font-weight:700;">Official Website</div>
-          <div style="font-size:15px;">Daniel C Muomah</div>
-        </div>
-      </div>
+<header>
+<h1>Daniel C Muomah</h1>
+<p>Prophetic Teaching • Worship • Healing • Discipleship</p>
+</header>
 
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#ministry">Ministry</a>
-        <a href="#media">Media</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
-      </div>
+<nav>
+<a href="prophetic-confessions.html">Prophetic Confessions</a>
+<a href="warfare-prayer-library.html">Warfare Prayer Library</a>
+<a href="discipleship.html">Discipleship</a>
+<a href="youths-corner.html">Youth Corner</a>
+<a href="married-life.html">Married Life</a>
+<a href="children-corner.html">Children</a>
+<a href="ministers-workers.html">Ministers/Workers</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-      <a class="btn small primary" href="#contact">Invite / Contact</a>
-    </div>
-  </div>
+<section class="hero">
+<h2>Raising Mighty Men Through The Gospel</h2>
+<p>A prophetic voice with a mandate to ignite prayer altars, raise disciples, and strengthen believers for victorious living.</p>
 
-  <main class="wrap">
+<a class="button" href="https://facebook.com" target="_blank">Facebook</a>
+<a class="button" href="https://youtube.com" target="_blank">YouTube</a>
+<a class="button" href="https://wa.me/" target="_blank">WhatsApp</a>
+</section>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="grid">
-        <div class="card">
-          <h1>Prophetic Teaching, Worship, Healing & Discipleship.</h1>
-          <p class="sub">
-            Welcome to the official website of <b>Daniel C Muomah</b> — a prophetic voice with a mandate
-            to raise disciples, ignite prayer altars, and strengthen believers for victorious living.
-          </p>
+<section class="section">
+<h3>About The Ministry</h3>
+<p>Daniel C Muomah is a prophetic teacher and Anglican priest committed to raising believers who walk in holiness, power, and divine purpose.</p>
+</section>
 
-          <div class="pills">
-            <div class="pill">Prophetic Ministry</div>
-            <div class="pill">Deliverance & Healing</div>
-            <div class="pill">Worship & Revival</div>
-            <div class="pill">Discipleship</div>
-          </div>
+<footer>
+<p>©️ 2026 Daniel C Muomah | All Rights Reserved</p>
+</footer>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="https://www.facebook.com/share/16rYs17ACU/" target="_blank" rel="noreferrer">Facebook</a>
-            <a class="btn" href="https://youtube.com/@danielmuomah?si=ZkObaE_SNbCKQvZU" target="_blank" rel="noreferrer">YouTube</a>
-            <a class="btn" id="whatsappTop" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="btn" href="#media">Watch Latest</a>
-          </div>
-
-          <div class="kpis">
-            <div class="kpi"><b>Daily</b><span>Prophetic Declarations</span></div>
-            <div class="kpi"><b>Weekly</b><span>Teachings & Exhortations</span></div>
-            <div class="kpi"><b>Seasonal</b><span>Revival & Impartation</span></div>
-          </div>
-
-          <p class="note" style="margin-top:14px;">
-            A message of faith, holiness, and spiritual authority — helping believers walk in purpose, purity, and power.
-          </p>
-        </div>
-
-        <div class="portrait">
-          <div class="photo" aria-label="Portrait (replace with your photo later)"></div>
-          <div class="card">
-            <b>Quick Links</b>
-            <p class="note" style="margin:8px 0 12px;">
-              Follow, watch, and connect. You can replace the photo with your own image anytime.
-            </p>
-            <div class="pills">
-              <a class="pill" href="#contact">Invite / Booking</a>
-              <a class="pill" href="#events">Programs</a>
-              <a class="pill" href="#media">Sermons / Reels</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="two">
-        <div class="card">
-          <h2>About Daniel C Muomah</h2>
-          <p class="sub">
-            Daniel C Muomah is a minister with a passion for the Word of God, prayer, and Spirit-led discipleship.
-            His ministry expresses the Gospel with clarity and power—calling men and women to salvation, consecration,
-            and victorious living through Jesus Christ.
-          </p>
-          <div class="divider"></div>
-          <ul class="list">
-            <li><b>Personality:</b> prophetic, prayerful, disciplined, compassionate, and Word-driven</li>
-            <li><b>Emphasis:</b> holiness, spiritual growth, healing, deliverance, and kingdom living</li>
-            <li><b>Burden:</b> raising believers who carry a burning altar of prayer and intimacy with God</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>What You’ll Receive Here</h2>
-          <ul class="list">
-            <li>Short, impactful prophetic videos and declarations</li>
-            <li>Scripture-based teachings for faith, purity, and spiritual stability</li>
-            <li>Prayer points and revival charges for personal and corporate altars</li>
-            <li>Resources to help you grow in grace and spiritual authority</li>
-          </ul>
-          <div style="margin-top:14px;">
-            <a class="btn primary" href="#media">Go to Media</a>
-            <a class="btn" href="#contact" style="margin-left:8px;">Contact</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MINISTRY -->
-    <section id="ministry" class="section">
-      <div class="card">
-        <h2>Ministry Focus</h2>
-        <div class="two" style="margin-top:10px;">
-          <div>
-            <b>Core Mandate</b>
-            <p class="note">
-              To strengthen believers in Christ through the Word, prayer, worship, and discipleship—turning ordinary lives
-              into mighty witnesses for Jesus.
-            </p>
-          </div>
-          <div>
-            <b>Key Areas</b>
-            <div class="pills" style="margin-top:10px;">
-              <div class="pill">Salvation & Repentance</div>
-              <div class="pill">Consecration</div>
-              <div class="pill">Prayer & Intercession</div>
-              <div class="pill">Healing & Deliverance</div>
-              <div class="pill">Worship & Revival</div>
-              <div class="pill">Discipleship</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MEDIA -->
-    <section id="media" class="section">
-      <div class="two">
-        <div class="card">
-          <h2>Watch on YouTube</h2>
-          <p class="note">Your YouTube link is already connected below.</p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="https://youtube.com/@danielmuomah?si=ZkObaE_SNbCKQvZU" target="_blank" rel="noreferrer">Open YouTube Channel</a>
-            <a class="btn" href="https://www.facebook.com/share/16rYs17ACU/" target="_blank" rel="noreferrer">Open Facebook Page</a>
-          </div>
-
-          <p class="tiny note" style="margin-top:10px;">
-            If you send me your “latest YouTube video link”, I will embed it here so it plays on the website directly.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Connect & Grow</h2>
-          <p class="note">
-            If you’re new here: follow the Facebook page, subscribe on YouTube, and connect via WhatsApp for invitations or ministry-related enquiries.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" id="whatsappMid" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="btn" href="#contact">Invite / Contact</a>
-          </div>
-          <ul class="list" style="margin-top:10px;">
-            <li><b>Facebook:</b> prophetic reels, declarations, updates</li>
-            <li><b>YouTube:</b> teachings, sermons, deeper sessions</li>
-            <li><b>WhatsApp:</b> invitations, counselling requests, programme enquiries</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section id="events" class="section">
-      <div class="card">
-        <h2>Programs & Events</h2>
-        <p class="note">Edit these items anytime.</p>
-        <ul class="list">
-          <li><b>Weekly Worship</b> — (Add day/time)</li>
-          <li><b>Midweek Bible Study</b> — (Add day/time)</li>
-          <li><b>Prayer / Vigil</b> — (Add schedule)</li>
-          <li><b>Special Program</b> — (Add title/date)</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="two">
-        <div class="card">
-          <h2>Contact / Invite</h2>
-          <p class="note">
-            For invitations, ministration, programmes, or partnership—send a message below or contact via WhatsApp.
-          </p>
-
-          <form onsubmit="return openWhatsApp();" style="margin-top:12px;">
-            <div class="row">
-              <input class="input" id="name" placeholder="Your Name" required />
-              <input class="input" id="phone" placeholder="Phone (WhatsApp preferred)" />
-            </div>
-            <div style="margin-top:10px;">
-              <input class="input" id="email" placeholder="Email (optional)" />
-            </div>
-            <div style="margin-top:10px;">
-              <textarea class="input" id="message" placeholder="Your message..." required></textarea>
-            </div>
-            <div class="hero-actions" style="margin-top:12px;">
-              <button class="btn primary" type="submit">Send via WhatsApp</button>
-              <a class="btn" href="https://www.facebook.com/share/16rYs17ACU/" target="_blank" rel="noreferrer">Facebook</a>
-              <a class="btn" href="https://youtube.com/@danielmuomah?si=ZkObaE_SNbCKQvZU" target="_blank" rel="noreferrer">YouTube</a>
-            </div>
-          </form>
-
-          <p class="tiny note" style="margin-top:10px;">
-            This form sends directly to your WhatsApp (fastest). If you want an email form that stores messages, tell me and I’ll add it.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>WhatsApp Contact</h2>
-          <p class="note">
-            WhatsApp: <b>+234 701 697 8671</b><br/>
-            Click the button below to chat directly.
-          </p>
-
-          <div class="hero-actions" style="margin-top:12px;">
-            <a class="btn primary" id="whatsappBottom" href="#" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-            <a class="btn" href="#about">About</a>
-          </div>
-
-          <div class="divider"></div>
-          <p class="tiny note">
-            Tip: When you buy a domain later (e.g., danielmuomah.com), I can also set up a clean “/booking” page and a media gallery.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div class="wrap" style="padding:0;">
-        © <span id="year"></span> Daniel C Muomah. All rights reserved.
-        <div class="tiny" style="margin-top:6px;">
-          Built for mobile • Fast • Simple • Ready for Facebook & Google sharing.
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <script>
-    // Set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // WhatsApp number (international format, no + sign)
-    const whatsappNumber = "2347016978671";
-    const waBase = "https://wa.me/";
-
-    // Set WhatsApp buttons
-    const waTop = document.getElementById("whatsappTop");
-    const waMid = document.getElementById("whatsappMid");
-    const waBottom = document.getElementById("whatsappBottom");
-
-    waTop.href = waBase + whatsappNumber;
-    waMid.href = waBase + whatsappNumber;
-    waBottom.href = waBase + whatsappNumber;
-
-    function openWhatsApp(){
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      const text =
-        `Hello Daniel C Muomah,%0A%0A` +
-        `Name: ${encodeURIComponent(name)}%0A` +
-        `Phone: ${encodeURIComponent(phone)}%0A` +
-        `Email: ${encodeURIComponent(email)}%0A%0A` +
-        `${encodeURIComponent(message)}`;
-
-      window.open(`${waBase}${whatsappNumber}?text=${text}`, "_blank");
-      return false;
-    }
-  </script>
 </body>
 </html>
