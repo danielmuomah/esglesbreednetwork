@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Daniel C Muomah</title>
+  <style>
+    :root{--bg:#0b1020;--card:#121a33;--text:#f3f6ff;--muted:#c8d0ff;--gold:#d6b24d;--border:rgba(255,255,255,.12);--radius:18px;--max:1100px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,rgba(30,58,138,.22),transparent 55%),var(--bg);color:var(--text)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:34px 16px 54px}
+    .card{background:rgba(18,26,51,.80);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+    h1{margin:0 0 8px;color:var(--gold);font-size:30px}
+    p{margin:8px 0;color:var(--muted);line-height:1.7}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:14px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    label{display:block;margin:10px 0 6px;color:var(--muted);font-size:14px}
+    input,textarea,select{
+      width:100%;padding:12px 12px;border-radius:12px;
+      background:rgba(255,255,255,.06);border:1px solid var(--border);
+      color:var(--text);outline:none
+    }
+    textarea{min-height:120px;resize:vertical}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{
+      display:inline-block;padding:11px 14px;border-radius:12px;
+      border:1px solid rgba(214,178,77,.45);
+      background:rgba(214,178,77,.12);color:var(--gold);
+      text-decoration:none;font-weight:700
+    }
+    .btn.primary{background:var(--gold);color:#111;border-color:var(--gold)}
+    .small{font-size:13px;color:var(--muted);margin-top:10px}
+    .back{display:inline-block;margin-top:14px;color:var(--gold);text-decoration:none;font-weight:700}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .k{color:var(--gold);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Contact</h1>
+      <p>Let’s connect for counselling, discipleship, prayer requests, invitations, or ministry partnership.</p>
+
+      <div class="grid">
+        <div>
+          <h3 style="margin:0 0 6px;color:var(--gold)">Send a Message</h3>
+
+          <label>Full Name</label>
+          <input id="name" placeholder="Your full name" />
+
+          <label>WhatsApp Number</label>
+          <input id="phone" placeholder="e.g. +234..." />
+
+          <label>Message Type</label>
+          <select id="type">
+            <option>Prayer Request</option>
+            <option>Counselling</option>
+            <option>Discipleship</option>
+            <option>Invitation</option>
+            <option>Partnership</option>
+            <option>Testimony</option>
+            <option>Other</option>
+          </select>
+
+          <label>Your Message</label>
+          <textarea id="msg" placeholder="Write your message..."></textarea>
+
+          <div class="btns">
+            <a class="btn primary" id="waBtn" href="#">Send via WhatsApp</a>
+            <a class="btn" id="mailBtn" href="#">Send via Email</a>
+          </div>
+
+          <div class="small">
+            Direct contacts: <span class="k">+2347016878671</span> • <span class="k">danielmuoma@gmail.com</span>
+          </div>
+
+          <a class="back" href="index.html">← Back to Home</a>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 6px;color:var(--gold)">Official Contact</h3>
+          <p><span class="k">WhatsApp:</span> +2347016878671</p>
+          <p><span class="k">Email:</span> danielmuoma@gmail.com</p>
+          <p><span class="k">Ministry:</span> The Eagle’s Breed Discipleship Network</p>
+          <p class="small">Hours: 9am – 6pm (WAT). Messages will be attended to as soon as possible.</p>
+        </div>
+      </div>
+
+      <footer>©️ 2026 Daniel C Muomah</footer>
+    </div>
+  </div>
+
+  <script>
+    const waNumber = "2347016878671";
+    const email = "danielmuoma@gmail.com";
+
+    function buildText(){
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const type = document.getElementById("type").value;
+      const msg  = document.getElementById("msg").value.trim();
+
+      return `Hello Sir, I want to contact you.%0A%0AName: ${encodeURIComponent(name)}%0AWhatsApp: ${encodeURIComponent(phone)}%0AType: ${encodeURIComponent(type)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
+    }
+
+    document.getElementById("waBtn").addEventListener("click", function(e){
+      e.preventDefault();
+      const text = buildText();
+      window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
+    });
+
+    document.getElementById("mailBtn").addEventListener("click", function(e){
+      e.preventDefault();
+      const subject = encodeURIComponent("Message from Website Contact Page");
+      const body = decodeURIComponent(buildText()).replaceAll("%0A","\n");
+      window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>
