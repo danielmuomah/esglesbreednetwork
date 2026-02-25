@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>08 — Healing, Deliverance & Freedom | Bible Study</title>
+  <style>
+    :root{--bg:#0b0b12;--card:#121225;--muted:#b9b9d3;--text:#f3f3ff;--gold:#f6d365;--border:rgba(255,255,255,.10);--radius:18px;--max:1100px;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,rgba(30,58,138,.25),transparent 55%),var(--bg);color:var(--text);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 16px 60px;}
+    .card{background:rgba(18,18,37,.78);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+    h1{margin:0 0 6px;color:var(--gold);font-size:28px}
+    h2{margin:18px 0 8px;color:var(--gold);font-size:18px}
+    p,li{color:var(--muted);line-height:1.75}
+    ul{margin:8px 0 0 18px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid rgba(246,211,101,.35);color:#1b1b1b;background:var(--gold);}
+    a.btn.secondary{background:transparent;color:var(--gold);border:1px solid rgba(246,211,101,.45);}
+    .back{display:inline-block;margin-top:14px;color:var(--gold);font-weight:800;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>08 — Healing, Deliverance & Freedom</h1>
+      <p><b>Goal:</b> To know God’s provision for healing and to stand in deliverance and liberty.</p>
+
+      <h2>Key Scriptures</h2>
+      <ul>
+        <li><b>Isaiah 53:5</b> — “With His stripes we are healed.”</li>
+        <li><b>Psalm 107:20</b> — He sent His Word and healed them.</li>
+        <li><b>Luke 10:19</b> — Authority over all the power of the enemy.</li>
+        <li><b>John 8:36</b> — If the Son sets you free, you are free indeed.</li>
+      </ul>
+
+      <h2>Truths to Note</h2>
+      <ul>
+        <li>Healing is in the atonement; receive by faith and prayer.</li>
+        <li>Deliverance involves truth, repentance, prayer, and maintaining purity.</li>
+        <li>Freedom must be guarded: avoid doors that reopen bondage.</li>
+      </ul>
+
+      <h2>Practical Steps</h2>
+      <ul>
+        <li>Renounce known sins and close spiritual doors.</li>
+        <li>Pray scriptures daily and maintain fellowship.</li>
+        <li>Replace fear with the Word; speak healing and liberty.</li>
+      </ul>
+
+      <h2>Prayer Points</h2>
+      <ul>
+        <li>Every affliction in my body, dry up by the power of God.</li>
+        <li>Every yoke of bondage, break now in Jesus’ Name.</li>
+        <li>I declare liberty in my spirit, soul, and body.</li>
+      </ul>
+
+      <div class="nav">
+        <a class="btn secondary" href="bible-study-07.html">← Previous</a>
+        <a class="btn secondary" href="bible-study.html">Library</a>
+        <a class="btn" href="bible-study-09.html">Next: Purpose & Calling →</a>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
