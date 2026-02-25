@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>04 — Marriage: Before You Marry | Bible Study</title>
+  <style>
+    :root{--bg:#0b0b12;--card:#121225;--muted:#b9b9d3;--text:#f3f3ff;--gold:#f6d365;--border:rgba(255,255,255,.10);--radius:18px;--max:1100px;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,rgba(30,58,138,.25),transparent 55%),var(--bg);color:var(--text);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 16px 60px;}
+    .card{background:rgba(18,18,37,.78);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+    h1{margin:0 0 6px;color:var(--gold);font-size:28px}
+    h2{margin:18px 0 8px;color:var(--gold);font-size:18px}
+    p,li{color:var(--muted);line-height:1.75}
+    ul{margin:8px 0 0 18px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid rgba(246,211,101,.35);color:#1b1b1b;background:var(--gold);}
+    a.btn.secondary{background:transparent;color:var(--gold);border:1px solid rgba(246,211,101,.45);}
+    .back{display:inline-block;margin-top:14px;color:var(--gold);font-weight:800;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>04 — Marriage: Before You Marry</h1>
+      <p><b>Goal:</b> To prepare wisely for marriage and avoid destiny errors.</p>
+
+      <h2>Key Scriptures</h2>
+      <ul>
+        <li><b>Amos 3:3</b> — Can two walk together except they be agreed?</li>
+        <li><b>Proverbs 4:23</b> — Guard your heart with all diligence.</li>
+        <li><b>2 Corinthians 6:14</b> — Do not be unequally yoked.</li>
+        <li><b>Genesis 2:18</b> — Purpose of companionship and help.</li>
+      </ul>
+
+      <h2>Before You Marry — Check These</h2>
+      <ul>
+        <li><b>Spiritual Compatibility:</b> salvation, values, prayer life.</li>
+        <li><b>Purpose Alignment:</b> destiny, calling, direction.</li>
+        <li><b>Character Proof:</b> humility, honesty, anger control, integrity.</li>
+        <li><b>Family Wisdom:</b> seek counsel, avoid secrecy.</li>
+      </ul>
+
+      <h2>Prayer Points</h2>
+      <ul>
+        <li>Father, deliver me from wrong choices and wrong connections.</li>
+        <li>Let my heart be guided by Your Spirit, not pressure.</li>
+        <li>I receive wisdom to build a godly home, in Jesus’ Name.</li>
+      </ul>
+
+      <div class="nav">
+        <a class="btn secondary" href="bible-study-03.html">← Previous</a>
+        <a class="btn secondary" href="bible-study.html">Library</a>
+        <a class="btn" href="bible-study-05.html">Next: Discipleship Growth →</a>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
