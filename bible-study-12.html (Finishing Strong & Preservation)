@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>12 — Finishing Strong & Divine Preservation | Bible Study</title>
+  <style>
+    :root{--bg:#0b0b12;--card:#121225;--muted:#b9b9d3;--text:#f3f3ff;--gold:#f6d365;--border:rgba(255,255,255,.10);--radius:18px;--max:1100px;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,rgba(30,58,138,.25),transparent 55%),var(--bg);color:var(--text);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 16px 60px;}
+    .card{background:rgba(18,18,37,.78);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+    h1{margin:0 0 6px;color:var(--gold);font-size:28px}
+    h2{margin:18px 0 8px;color:var(--gold);font-size:18px}
+    p,li{color:var(--muted);line-height:1.75}
+    ul{margin:8px 0 0 18px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid rgba(246,211,101,.35);color:#1b1b1b;background:var(--gold);}
+    a.btn.secondary{background:transparent;color:var(--gold);border:1px solid rgba(246,211,101,.45);}
+    .back{display:inline-block;margin-top:14px;color:var(--gold);font-weight:800;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>12 — Finishing Strong & Divine Preservation</h1>
+      <p><b>Goal:</b> To finish seasons well, avoid last-minute disaster, and walk in divine covering.</p>
+
+      <h2>Key Scriptures</h2>
+      <ul>
+        <li><b>2 Timothy 4:7</b> — “I have fought a good fight… I have finished my course…”</li>
+        <li><b>Psalm 121:7–8</b> — The Lord preserves your going out and coming in.</li>
+        <li><b>Ecclesiastes 7:8</b> — Better is the end of a thing than the beginning.</li>
+        <li><b>Psalm 91:1–2</b> — Dwelling in His secret place brings covering.</li>
+      </ul>
+
+      <h2>Truths to Note</h2>
+      <ul>
+        <li>Many start well; finishing well requires discipline and grace.</li>
+        <li>Preservation is both spiritual and practical (wisdom, caution, prayer).</li>
+        <li>Consistency is the secret of finishing strong.</li>
+      </ul>
+
+      <h2>Prayer Points</h2>
+      <ul>
+        <li>Father, establish me and help me finish every assignment well.</li>
+        <li>I reject sudden disaster, premature loss, and evil reports.</li>
+        <li>Let divine preservation surround me and my household, in Jesus’ Name.</li>
+      </ul>
+
+      <div class="nav">
+        <a class="btn secondary" href="bible-study-11.html">← Previous</a>
+        <a class="btn secondary" href="bible-study.html">Library</a>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
