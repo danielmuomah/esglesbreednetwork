@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>10 — Kingdom Prosperity & Stewardship | Bible Study</title>
+  <style>
+    :root{--bg:#0b0b12;--card:#121225;--muted:#b9b9d3;--text:#f3f3ff;--gold:#f6d365;--border:rgba(255,255,255,.10);--radius:18px;--max:1100px;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,rgba(30,58,138,.25),transparent 55%),var(--bg);color:var(--text);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 16px 60px;}
+    .card{background:rgba(18,18,37,.78);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+    h1{margin:0 0 6px;color:var(--gold);font-size:28px}
+    h2{margin:18px 0 8px;color:var(--gold);font-size:18px}
+    p,li{color:var(--muted);line-height:1.75}
+    ul{margin:8px 0 0 18px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid rgba(246,211,101,.35);color:#1b1b1b;background:var(--gold);}
+    a.btn.secondary{background:transparent;color:var(--gold);border:1px solid rgba(246,211,101,.45);}
+    .back{display:inline-block;margin-top:14px;color:var(--gold);font-weight:800;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>10 — Kingdom Prosperity & Stewardship</h1>
+      <p><b>Goal:</b> To understand prosperity as covenant stewardship — resources managed for Kingdom impact.</p>
+
+      <h2>Key Scriptures</h2>
+      <ul>
+        <li><b>Deuteronomy 8:18</b> — Power to get wealth to establish covenant.</li>
+        <li><b>Genesis 26:12–14</b> — Isaac sowed and prospered by God’s blessing.</li>
+        <li><b>Proverbs 10:22</b> — The blessing of the Lord makes rich.</li>
+        <li><b>Luke 16:10–12</b> — Faithfulness in little qualifies for much.</li>
+      </ul>
+
+      <h2>Truths to Note</h2>
+      <ul>
+        <li>Prosperity must produce generosity and responsibility.</li>
+        <li>Stewardship involves budgeting, saving, giving, and diligence.</li>
+        <li>God prospers you to be a blessing, not a burden.</li>
+      </ul>
+
+      <h2>Practical Steps</h2>
+      <ul>
+        <li>Track your income/expenses for 7 days.</li>
+        <li>Create a simple plan: giving + savings + needs + growth.</li>
+        <li>Ask God for wisdom for profit, integrity, and increase.</li>
+      </ul>
+
+      <h2>Prayer Points</h2>
+      <ul>
+        <li>Father, bless the work of my hands and establish me in increase.</li>
+        <li>Deliver me from waste and grant me stewardship wisdom.</li>
+        <li>Let my resources advance the Kingdom, in Jesus’ Name.</li>
+      </ul>
+
+      <div class="nav">
+        <a class="btn secondary" href="bible-study-09.html">← Previous</a>
+        <a class="btn secondary" href="bible-study.html">Library</a>
+        <a class="btn" href="bible-study-11.html">Next: Family & Parenting →</a>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
